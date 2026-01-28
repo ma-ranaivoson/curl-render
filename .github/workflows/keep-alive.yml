@@ -14,9 +14,3 @@ jobs:
           echo "First ping"
           curl -s -o /dev/null -w "Backend: %{http_code}\n" https://todo-list-u4te.onrender.com/
           curl -s -o /dev/null -w "Frontend: %{http_code}\n" https://todo-list-frontend-cyq4.onrender.com/
-
-          sleep 30
-
-          echo "Second ping (after 30s)"
-          curl -s -o /dev/null -w "Backend: %{http_code}\n" https://todo-list-u4te.onrender.com/
-          curl -s -o /dev/null -w "Frontend: %{http_code}\n" https://todo-list-frontend-cyq4.onrender.com/
